@@ -18,14 +18,14 @@ def print_promotion(total_cost):
     if total_cost >= MINIMUM:
         while temp_cost != 0:
             if temp_cost // MAXIMUM >= 1:
-                num_icecream += temp_cost / MAXIMUM
+                num_icecream += temp_cost // MAXIMUM
                 num_cake += temp_cost // MAXIMUM
                 temp_cost = temp_cost - (num_icecream * MAXIMUM)
             elif temp_cost // MIDRANGE >= 1:
                 num_cake += temp_cost // MIDRANGE
                 temp_cost = temp_cost - (num_cake * MIDRANGE)
             elif temp_cost // MINIMUM >= 1:
-                num_icecream += temp_cost / MINIMUM
+                num_icecream += temp_cost // MINIMUM
                 temp_cost = temp_cost - (num_icecream * MAXIMUM)
             else:
                 temp_cost = 0
@@ -44,4 +44,4 @@ def print_promotion(total_cost):
         print(FREE_ICECREAM + str(num_icecream))
         return FREE_ICECREAM + str(num_icecream)
 
-print_promotion(1200)
+print_promotion(2400)

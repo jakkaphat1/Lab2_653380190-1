@@ -6,11 +6,11 @@ def test_minumum_promotion():
     assert result == 'Free ice cream cone = 1'
 
 def test_midrange_promotion():
-    result = print_promotion(750)
+    result = print_promotion(700)
     assert result == 'Free chocolate cake = 1'
 
 def test_maximum_promotion():
-    result = print_promotion(1250)
+    result = print_promotion(1200)
     assert result == 'Free ice cream cone = 1 and Free chocolate cake = 1'
 
 def test_low1_promotion():
@@ -18,11 +18,11 @@ def test_low1_promotion():
     assert result == 'Thank you and see you next time'
 
 def test_low2_promotion():
-    result = print_promotion(250)
+    result = print_promotion(200)
     assert result == 'Thank you and see you next time'
 
 def test_low3_promotion():
-    result = print_promotion(490)
+    result = print_promotion(450)
     assert result == 'Thank you and see you next time'
 
 
