@@ -3,7 +3,7 @@
 # Student ID: 653380190-1
 
 MINIMUM = 500
-MIDRANGE: int = 700
+MIDRANGE = 700
 MAXIMUM = 1200
 FREE_ICECREAM = "Free ice cream cone = "
 FREE_CAKE = "Free chocolate cake = "
